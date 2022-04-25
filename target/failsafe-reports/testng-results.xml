@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-24T22:40:45 BRT" name="Surefire suite" finished-at="2022-04-24T22:41:21 BRT" duration-ms="35471">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:executa.ExecutarIT@383bfa16]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-04-24T22:40:45 BRT" name="Surefire test" finished-at="2022-04-24T22:41:21 BRT" duration-ms="35471">
+      <class name="executa.ExecutarIT">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:executa.ExecutarIT@383bfa16]" started-at="2022-04-24T22:40:45 BRT" name="setUpClass" finished-at="2022-04-24T22:40:46 BRT" duration-ms="718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7f0b93b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:executa.ExecutarIT@383bfa16]" started-at="2022-04-24T22:40:46 BRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-24T22:40:58 BRT" duration-ms="12161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cadastrar novo cliente"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Cadastrar novo cliente e depois exclui-lo]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:executa.ExecutarIT@383bfa16]" started-at="2022-04-24T22:40:58 BRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-24T22:41:21 BRT" duration-ms="22451" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cadastrar novo funcionario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Cadastrar novo cliente e depois exclui-lo]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [] but found [Your data has been successfully deleted from the database.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [] but found [Your data has been successfully deleted from the database.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at provaSicrediWeb@1.0-SNAPSHOT/paginas.Metodos.validarTexto(Metodos.java:276)
+at provaSicrediWeb@1.0-SNAPSHOT/steps.Steps.valido_a_exclusao(Steps.java:111)
+at ✽.valido a exclusao(file:///C:/Users/erick/IdeaProjects/provaSicrediWeb/src/test/resources/features/provaSicredi.feature:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:executa.ExecutarIT@383bfa16]" started-at="2022-04-24T22:41:21 BRT" name="tearDownClass" finished-at="2022-04-24T22:41:21 BRT" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- executa.ExecutarIT -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

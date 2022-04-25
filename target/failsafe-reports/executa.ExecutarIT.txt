@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: executa.ExecutarIT
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.492 s <<< FAILURE! - in executa.ExecutarIT
+executa.ExecutarIT.runScenario["Cadastrar novo funcionario", "Optional[Cadastrar novo cliente e depois exclui-lo]"](2)  Time elapsed: 22.54 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Your data has been successfully deleted from the database.]
+
