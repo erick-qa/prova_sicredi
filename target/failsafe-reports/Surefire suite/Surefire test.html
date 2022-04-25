@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 24 22:40:45 BRT 2022</td>
+<td>Started on:</td><td>Mon Apr 25 18:49:15 BRT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35471 ms)</td>
+<tr><td>Total time:</td><td>27 seconds (27004 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,36 +75,39 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='executa.ExecutarIT.runScenario()'><b>runScenario</b><br>Test class: executa.ExecutarIT<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cadastrar novo funcionario", "Optional[Cadastrar novo cliente e depois exclui-lo]"</td>
-<td><div><pre>java.lang.AssertionError: expected [] but found [Your data has been successfully deleted from the database.]
-	at provaSicrediWeb@1.0-SNAPSHOT/paginas.Metodos.validarTexto(Metodos.java:276)
-	at provaSicrediWeb@1.0-SNAPSHOT/steps.Steps.valido_a_exclusao(Steps.java:111)
-	at ✽.valido a exclusao(file:///C:/Users/erick/IdeaProjects/provaSicrediWeb/src/test/resources/features/provaSicredi.feature:30)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2131984667", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2131984667'><pre>java.lang.AssertionError: expected [] but found [Your data has been successfully deleted from the database.]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at provaSicrediWeb@1.0-SNAPSHOT/paginas.Metodos.validarTexto(Metodos.java:276)
-	at provaSicrediWeb@1.0-SNAPSHOT/steps.Steps.valido_a_exclusao(Steps.java:111)
-	at ✽.valido a exclusao(file:///C:/Users/erick/IdeaProjects/provaSicrediWeb/src/test/resources/features/provaSicredi.feature:30)
-</pre></div></td>
-<td>22</td>
-<td>executa.ExecutarIT@383bfa16</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
 <td title='executa.ExecutarIT.runScenario()'><b>runScenario</b><br>Test class: executa.ExecutarIT<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cadastrar novo cliente", "Optional[Cadastrar novo cliente e depois exclui-lo]"</td>
-<td></td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Metodos.printScreenErros(Metodos.java:148)
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Metodos.esperarClicavel(Metodos.java:246)
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Navegacoes.validacaoDeCadastro(Navegacoes.java:13)
+	at prova.sicredi@1.0-SNAPSHOT/steps.Steps.valido_o_cadastro_do_primeiro_cenario(Steps.java:66)
+	at ✽.valido o cadastro do primeiro cenario(file:///C:/Users/erick/IdeaProjects/prova_sicredi/src/test/resources/features/provaSicredi.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1687293378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1687293378'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Metodos.printScreenErros(Metodos.java:148)
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Metodos.esperarClicavel(Metodos.java:246)
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Navegacoes.validacaoDeCadastro(Navegacoes.java:13)
+	at prova.sicredi@1.0-SNAPSHOT/steps.Steps.valido_o_cadastro_do_primeiro_cenario(Steps.java:66)
+	at ✽.valido o cadastro do primeiro cenario(file:///C:/Users/erick/IdeaProjects/prova_sicredi/src/test/resources/features/provaSicredi.feature:16)
+</pre></div></td>
+<td>13</td>
+<td>executa.ExecutarIT@383bfa16</td></tr>
+<tr>
+<td title='executa.ExecutarIT.runScenario()'><b>runScenario</b><br>Test class: executa.ExecutarIT<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cadastrar novo funcionario", "Optional[Cadastrar novo cliente e depois exclui-lo]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Metodos.printScreenErros(Metodos.java:148)
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Metodos.esperarClicavel(Metodos.java:246)
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Navegacoes.validacaoDeCadastro(Navegacoes.java:13)
+	at prova.sicredi@1.0-SNAPSHOT/steps.Steps.valido_o_cadastro_do_segundo_cenario(Steps.java:72)
+	at ✽.valido o cadastro do segundo cenario(file:///C:/Users/erick/IdeaProjects/prova_sicredi/src/test/resources/features/provaSicredi.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace582857168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace582857168'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Metodos.printScreenErros(Metodos.java:148)
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Metodos.esperarClicavel(Metodos.java:246)
+	at prova.sicredi@1.0-SNAPSHOT/paginas.Navegacoes.validacaoDeCadastro(Navegacoes.java:13)
+	at prova.sicredi@1.0-SNAPSHOT/steps.Steps.valido_o_cadastro_do_segundo_cenario(Steps.java:72)
+	at ✽.valido o cadastro do segundo cenario(file:///C:/Users/erick/IdeaProjects/prova_sicredi/src/test/resources/features/provaSicredi.feature:24)
+</pre></div></td>
 <td>12</td>
 <td>executa.ExecutarIT@383bfa16</td></tr>
 </table><p>

@@ -8,12 +8,15 @@ import io.cucumber.java.pt.Quando;
 import paginas.Metodos;
 
 
+
 import java.io.IOException;
 
 public class Steps {
 
     Metodos metodo = new Metodos();
     ElementosWeb el = new ElementosWeb();
+
+
 
 
     @Dado("eu acesse o site {string}")
@@ -24,6 +27,7 @@ public class Steps {
 
     @Quando("eu altero o select version")
     public void eu_altero_o_select_version() throws IOException {
+        metodo.esperarClicavel(el.getSwitchVersion(),"esperar_elemento_ser_clicavel");
         metodo.selecionarComboPosicao(el.getSwitchVersion(), 1, "selecionar_switch_version");
 
 
@@ -51,16 +55,24 @@ public class Steps {
         metodo.pausa(1000, "esperar_um_segundo");
         metodo.clicar(el.getEmployeer(), "selecionar_employeer");
         metodo.esperarClicavel(el.getFixter(), "esperar_ser_clicavel");
+        metodo.teclaPageDw("rolar_a_tela_para_baixo");
         metodo.clicar(el.getFixter(), "selecionar_fixter");
         metodo.clicar(el.getButtonSave(), "clicar_em_save");
 
     }
 
-    @Quando("valido o cadastro")
-    public void valido_o_cadastro() throws IOException, InterruptedException {
+    @Quando("valido o cadastro do primeiro cenario")
+    public void valido_o_cadastro_do_primeiro_cenario() throws IOException, InterruptedException {
         metodo.esperarClicavel(el.getCadastroPronto(),"esperar_elemento_ficar_visivel");
         metodo.validarTexto(el.getCadastroPronto(), "Your data has been successfully stored into the database. Edit Customer or Go back to list", "validar_confrimacao_de_cadastro");
+        metodo.printScreenCadastrUser("01_cadastro_realizado_no_primeiro_cenario");
+    }
 
+    @Quando("valido o cadastro do segundo cenario")
+    public void valido_o_cadastro_do_segundo_cenario() throws IOException, InterruptedException {
+        metodo.esperarClicavel(el.getCadastroPronto(),"esperar_elemento_ficar_visivel");
+        metodo.validarTexto(el.getCadastroPronto(), "Your data has been successfully stored into the database. Edit Customer or Go back to list", "validar_confrimacao_de_cadastro");
+        metodo.printScreenCadastrUser("02_cadastro_realizado_no_segundo_cenario");
     }
 
     @Entao("fecho navegador")
@@ -86,7 +98,8 @@ public class Steps {
     }
 
     @Quando("deleto o cliente cadastrado")
-    public void deleto_o_cliente_cadastrado() throws IOException {
+    public void deleto_o_cliente_cadastrado() throws IOException, InterruptedException {
+        metodo.esperarClicavel(el.getAction(),"esperar_elemento_ser_clicavel");
         metodo.clicar(el.getAction(), "clicar_em_actions");
         metodo.clicar(el.getDelete(), "clicar_em_delete");
 
@@ -106,10 +119,10 @@ public class Steps {
     }
 
     @Quando("valido a exclusao")
-    public void valido_a_exclusao() throws IOException {
+    public void valido_a_exclusao() throws IOException, InterruptedException {
         metodo.esperarClicavel(el.getConfirm(),"esperar_elemento_ficar_visivel");
         metodo.validarTexto(el.getConfirm(),"Your data has been successfully deleted from the database.","validar");
-
+        metodo.printScreenExclusaoFuncionario("01_exclusao_realizada_no_segundo_cenario");
     }
 }
 

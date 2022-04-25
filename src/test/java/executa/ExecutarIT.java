@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
         // Tags para apontar ou nao, a execucao dos cenarios
         tags = "@Executa and not @nExecuta",
         // Para formatar do console de acordo com o Cucumber, e gerar um report em html
-        plugin = {"pretty", "html:./report/Testes_inmetrics.html"},
+        plugin = {"pretty", "html:./report/prova_sicredi.html"},
         // Monochrome deixa o console com uma melhor visualizacao, sem trazer caracteres especiais
         monochrome = true,
         // Deixa os metodos com padrao da linguagem Java

@@ -123,18 +123,18 @@ public class Metodos {
      */
     public void printScreenCadastrUser(String nomePrint) throws IOException {
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("./evidencias/cadastro_user/"+nomePrint+".png"));
+        FileUtils.copyFile(scrFile, new File("./evidencias/cadastro/"+nomePrint+".png"));
     }
 
     /**
-     * Print Screen Cadastro Funcionario
+     * Print Screen Exclusao Funcionario
      *
      * @author Erick Santos
      *
      */
-    public void printScreenCadastroFuncionario(String nomePrint) throws IOException {
+    public void printScreenExclusaoFuncionario(String nomePrint) throws IOException {
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("./evidencias/cadastro_funcionario/"+nomePrint+".png"));
+        FileUtils.copyFile(scrFile, new File("./evidencias/exclusao/"+nomePrint+".png"));
     }
 
 

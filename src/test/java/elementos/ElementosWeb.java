@@ -27,7 +27,7 @@ public class ElementosWeb {
     private By goBackToList = By.id("save-and-go-back-button");
 
     private By searchName = By.xpath("/html/body/div[2]/div[2]/div[1]/div[2]/form/div[2]/table/thead/tr[2]/td[3]/input");
-    private By action = By.xpath("/html/body/div[2]/div[2]/div[1]/div[2]/form/div[2]/table/tbody/tr[1]/td[1]/input");
+    private By action = By.xpath("//*[@id=\"gcrud-search-form\"]/div[2]/table/tbody/tr[1]/td[1]/input");
     private By delete = By.xpath("//*[@id=\"gcrud-search-form\"]/div[2]/table/thead/tr[2]/td[2]/div[1]/a");
     private By areYouSure = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[2]/p[2]");
     private By deletar = By.xpath("/html/body/div[2]/div[2]/div[3]/div/div/div[3]/button[2]");

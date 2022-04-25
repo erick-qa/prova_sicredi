@@ -13,7 +13,7 @@ Funcionalidade: Cadastrar novo cliente e depois exclui-lo
     Quando eu altero o select version
     E clico em add customer
     E preencho todos os dados do cliente
-    E valido o cadastro
+    E valido o cadastro do primeiro cenario
     Entao fecho navegador
 
   @Executa
@@ -21,7 +21,7 @@ Funcionalidade: Cadastrar novo cliente e depois exclui-lo
     Quando eu altero o select version
     E clico em add customer
     E preencho todos os dados do cliente
-    E valido o cadastro
+    E valido o cadastro do segundo cenario
     E clico em go back to list
     E pesquiso o nome do cliente cadastrado
     E deleto o cliente cadastrado
