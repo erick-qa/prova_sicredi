@@ -5,3 +5,6 @@
 *.ipr
 Temp*
 RationalValues*
+
+### Maven ###
+*/target/*
